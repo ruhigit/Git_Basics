@@ -85,4 +85,40 @@ RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
     To https://github.com/ruhigit/Git_Basics.git
        272406e..01785c5  master -> master
 
+4] Add or update files in this repository
+
+a) Change directory 
+RUHI-PC@RUHI /f/fall14/extra
+$ cd Git_Basics/
+b) Add FileToAdd
+RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
+$ ls
+FileToAdd.docx  README.md  ~$leToAdd.docx
+c) Add the file
+RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
+$ git add FileToAdd.docx
+d) Commit changes
+RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
+$ git commit -m 'Adding a new file'
+[master ac4d5f0] Adding a new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 FileToAdd.docx
+e) It is safe to pull first (Can skip this step)
+RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
+$ git pull origin master
+From https://github.com/ruhigit/Git_Basics
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+f) Push the changes
+RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
+$ git push origin master
+Username for 'https://github.com': ruhigit
+Password for 'https://ruhigit@github.com':
+Counting objects: 14, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 25.81 KiB | 0 bytes/s, done.
+Total 11 (delta 2), reused 0 (delta 0)
+To https://github.com/ruhigit/Git_Basics.git
+   4ed5a58..1f96799  master -> master
 
