@@ -27,10 +27,11 @@ Steps:
     $ ls
     File1.docx 
 
-
-RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
+    RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
     $ git add File1.docx
+    
     d) Commit this file {-m ’ Your custom message’}
+    
     RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)    
     $ git commit -m 'Basic Steps'
     [master (root-commit) 8d8fd0d] Basic Steps
@@ -38,11 +39,14 @@ RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
      create mode 100644 File1.docx
  
 3] Link your file to GitHub
+
     a) You need to replace "ruhigit" with your GitHub username
+    
     RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
     $ git remote add origin https://github.com/ruhigit/Git_Basics.git
     
     b) Push file to GitHub
+    
     RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
     $ git push origin master
     Username for 'https://github.com': ruhigit
@@ -57,6 +61,7 @@ RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
     hint: See the 'Note about fast-forwards' in 'git push --help' for details.
     
    c) (If rejected pull first)
+   
     RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
     $ git pull origin master
     warning: no common commits
@@ -73,6 +78,7 @@ RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
      create mode 100644 README.md
      
    d) Now push to master branch again (re-run the command)
+   
     RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
     $ git push origin master
     Username for 'https://github.com': ruhigit
@@ -88,28 +94,39 @@ RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
 4] Add or update files in this repository
 
 a) Change directory 
+
 RUHI-PC@RUHI /f/fall14/extra
 $ cd Git_Basics/
+
 b) Add FileToAdd
+
 RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
 $ ls
 FileToAdd.docx  README.md  ~$leToAdd.docx
+
 c) Add the file
+
 RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
 $ git add FileToAdd.docx
+
 d) Commit changes
+
 RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
 $ git commit -m 'Adding a new file'
 [master ac4d5f0] Adding a new file
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 FileToAdd.docx
+ 
 e) It is safe to pull first (Can skip this step)
+
 RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
 $ git pull origin master
 From https://github.com/ruhigit/Git_Basics
  * branch            master     -> FETCH_HEAD
 Already up-to-date.
+
 f) Push the changes
+
 RUHI-PC@RUHI /f/fall14/extra/Git_Basics (master)
 $ git push origin master
 Username for 'https://github.com': ruhigit
